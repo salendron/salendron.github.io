@@ -9,14 +9,16 @@
       
       <!-- MENU //-->
       <core-header-panel drawer> 
-        <core-toolbar class="tall">
-          <span flex="" class="bottom"><a class="site-title" href="{{ site.baseurl }}/"><img src="img/logo.png" id="logo"></a></span>
+        <core-toolbar class="narrow">
+          <span flex="" class="bottom"><a class="site-title" href="{{ site.baseurl }}/"><img src="{{ "/img/logo.png" | prepend: site.baseurl }}" id="logo"></a></span>
           <core-icon-button onclick="document.querySelector('core-drawer-panel').togglePanel();" icon="menu" class="bottom"></core-icon-button>
         </core-toolbar>
-        <div class="trigger">
+        <div id="drawer-content">
           {% for page in site.pages %}
             {% if page.title %}
-            <a class="page-link" href="{{ page.url | prepend: site.baseurl }}">{{ page.title }}</a>
+              <paper-item>
+                <a class="menu-link" href="{{ page.url | prepend: site.baseurl }}" layout horizontal center target="_self">{{ page.title }}</a>
+              </paper-item>
             {% endif %}
           {% endfor %}
         </div>
@@ -27,7 +29,7 @@
         <core-scroll-header-panel condenses keepCondensedHeader>
           <core-toolbar class="tall">
             <core-icon-button onclick="document.querySelector('core-drawer-panel').togglePanel();" icon="menu" class="bottom"></core-icon-button>
-            <span flex="" class="bottom"><a class="site-title" href="{{ site.baseurl }}/"><img src="img/logo.png" id="logo"></a></span>
+            <span flex="" class="bottom"><a class="site-title" href="{{ site.baseurl }}/"><img src="{{ "/img/logo.png" | prepend: site.baseurl }}" id="logo"></a></span>
           </core-toolbar>
           
           <div class="page-content">

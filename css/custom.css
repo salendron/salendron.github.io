@@ -11,6 +11,36 @@ core-toolbar {
     background-color: #cddc39;
 }
 
+#drawer-content {
+    background-color: #ffffff;
+    height:100%;
+}
+
+paper-item {
+    background-color:#dddddd;
+    
+}
+
+.menu-link {
+    color:#444444;
+    text-decoration: none;
+}
+
+.menu-link:visited {
+    color:#444444;
+    text-decoration: none;
+}
+
+.menu-link:active {
+    color:#444444;
+    text-decoration: none;
+}
+
+.menu-link:hover {
+    color:#444444;
+    text-decoration: none;
+}
+
 #logo {
     border: none;
     width:400px;
