@@ -1,3 +1,12 @@
+html, body {
+  height: 100%;
+  margin: 0;
+}
+
+core-scroll-header-panel {
+  height: 100%;
+}
+
 #logo {
     border: none;
     width:400px;

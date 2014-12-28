@@ -1,0 +1,14 @@
+{
+  "name": "salendron.github.io",
+  "version": "0.0.1",
+  "homepage": "https://github.com/salendron/salendron.github.io",
+  "authors": [
+    "Bruno Hautzenberger <bruno@xamoom.com>"
+  ],
+  "description": "layer8issue",
+  "main": "index.html",
+  "license": "MIT",
+  "dependencies": {
+    "polymer": "Polymer/polymer#~0.5.2"
+  }
+}
