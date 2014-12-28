@@ -1,0 +1,17 @@
+<core-header-panel drawer> 
+<core-toolbar class="narrow">
+  <span flex="" class="bottom"><a class="site-title" href="{{ site.baseurl }}/"><img src="{{ "/img/logo.png" | prepend: site.baseurl }}" id="logo"></a></span>
+  <core-icon-button onclick="document.querySelector('core-drawer-panel').togglePanel();" icon="menu" class="bottom"></core-icon-button>
+</core-toolbar>
+<div id="drawer-content">
+  {% for page in site.pages %}
+    {% if page.title %}
+      <paper-item>
+        <a class="menu-link" href="{{ page.url | prepend: site.baseurl }}" layout horizontal center target="_self">
+          {{ page.title }}
+        </a>
+      </paper-item>
+    {% endif %}
+  {% endfor %}
+</div>
+</core-header-panel>

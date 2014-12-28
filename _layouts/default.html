@@ -8,48 +8,25 @@
     <core-drawer-panel forceNarrow>
       
       <!-- MENU //-->
-      <core-header-panel drawer> 
-        <core-toolbar class="narrow">
-          <span flex="" class="bottom"><a class="site-title" href="{{ site.baseurl }}/"><img src="{{ "/img/logo.png" | prepend: site.baseurl }}" id="logo"></a></span>
-          <core-icon-button onclick="document.querySelector('core-drawer-panel').togglePanel();" icon="menu" class="bottom"></core-icon-button>
-        </core-toolbar>
-        <div id="drawer-content">
-          {% for page in site.pages %}
-            {% if page.title %}
-              <paper-item>
-                <a class="menu-link" href="{{ page.url | prepend: site.baseurl }}" layout horizontal center target="_self">
-                  {{ page.title }}
-                </a>
-              </paper-item>
-            {% endif %}
-          {% endfor %}
-        </div>
-      </core-header-panel>
+      {% include menu.html %}
+      
       
       <!-- MAIN CONTENT //-->
       <core-header-panel main>
         <core-scroll-header-panel condenses keepCondensedHeader>
-          <core-toolbar class="tall">
-            <core-icon-button onclick="document.querySelector('core-drawer-panel').togglePanel();" icon="menu" class="bottom"></core-icon-button>
-            <span flex="" class="bottom"><a class="site-title" href="{{ site.baseurl }}/"><img src="{{ "/img/logo.png" | prepend: site.baseurl }}" id="logo"></a></span>
-          </core-toolbar>
+          {% include header.html %}
           
           <div class="page-content">
             <div class="wrapper">
               {{ content }}
             </div>
-          </div>
+          </div>          
       
           {% include footer.html %}
-          
         </core-scroll-header-panel>
-    
       </core-header-panel>
       
     </core-drawer-panel>
-
-    {% include header.html %}
-  
     
   </body>
 
