@@ -17,7 +17,9 @@
           {% for page in site.pages %}
             {% if page.title %}
               <paper-item>
-                <a class="menu-link" href="{{ page.url | prepend: site.baseurl }}" layout horizontal center target="_self">{{ page.title }}</a>
+                <a class="menu-link" href="{{ page.url | prepend: site.baseurl }}" layout horizontal center target="_self">
+                  {{ page.title }}
+                </a>
               </paper-item>
             {% endif %}
           {% endfor %}
