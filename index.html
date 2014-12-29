@@ -13,7 +13,7 @@ layout: default
       </h2>
       {{ post.excerpt }}
       <p style="width:100%;text-align:right;">
-         <paper-button raised label="more" onclick="window.open('{{ post.url | prepend: site.baseurl }}','_self')">more</paper-button>
+         <paper-button label="more" onclick="window.open('{{ post.url | prepend: site.baseurl }}','_self')">more <core-icon icon="chevron-right"></core-icon></paper-button>
       </p>
     </div>
   {% endfor %}
