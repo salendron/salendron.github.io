@@ -12,8 +12,7 @@ layout: default
         <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
       </h2>
       {{ post.excerpt }}
-      <a style="text-align:right;" href="{{ post.url | prepend: site.baseurl }}">more...</a>
-      <paper-button raisedButton label="more" onclick="window.open('{{ post.url | prepend: site.baseurl }}','_self')">more</paper-button>
+      <paper-button raised style="float:right;" label="more" onclick="window.open('{{ post.url | prepend: site.baseurl }}','_self')">more</paper-button>
     </div>
   {% endfor %}
 
