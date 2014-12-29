@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Welcome to layer8issue"
+title:  "Welcome to layer8issue!"
 date:   2014-12-29 12:31:53
 categories: blog
 ---
@@ -11,8 +11,8 @@ Simple question, simple answer. We live in a connected world, a world in which b
 
 ## Why Jekyll? Why not Wordpress?
 I love Wordpress. I think it is one of the best pieces of software ever written (allthough it is written in PHP) and the community arround it is amazing. 
-The problem about Wordpress is its biggest strength, it is very powerful and has a lot of features.
-I've been using it for years for blogging, but since I do not have that much time to blog, I was looking for something that is a lot simpler and makes it easier for me to write without using a PC. I wanted something fast and simple.
+The problem with Wordpress is its biggest strength, it is very powerful and has a lot of features.
+I've been using it for years for blogging, but since I do not have that much time to blog anymore, I was looking for something that is a lot simpler and makes it easier for me to write without using a PC. I wanted something fast and simple.
 So after testing some alternative systems, I decided to use [Jekyll](http://jekyllrb.com/). 
 Jekyll describes itself like this:
 
