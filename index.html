@@ -13,6 +13,7 @@ layout: default
       </h2>
       {{ post.excerpt }}
       <a style="text-align:right;" href="{{ post.url | prepend: site.baseurl }}">more...</a>
+      <paper-button label="more" link="{{ post.url | prepend: site.baseurl }}" on-tap="{{goLink}}"></paper-button>
     </div>
   {% endfor %}
 
