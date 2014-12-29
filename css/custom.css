@@ -27,7 +27,7 @@ a:hover {
 
 blockquote {
     border-left: 4px solid #cddc39;
-    font-size: 1.5em;
+    font-size: 1.2em;
 }
 
 core-scroll-header-panel {
@@ -78,9 +78,9 @@ paper-item {
     padding:10px;
 }
 
-paper-shadow.list {
+.list {
     margin-bottom: 20px;
-    background-color: #ffffff;
+    border-bottom: 1px solid #cddc39;
 }
 
 .post-link {
