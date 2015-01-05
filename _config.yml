@@ -1,7 +1,7 @@
 # Site settings
 title: layer8issue
 email: bhautzenberger@gmail.com
-description: This is awesome
+description: This is a blog about technologie, gadgets, tools, apps, programming, software engineering and about the life of an austrian developer and co-founder of xamoom.com, me.
 baseurl: "" # the subpath of your site, e.g. /blog/
 url: "http://yourdomain.com" # the base hostname & protocol for your site
 twitter_username: salendron 
