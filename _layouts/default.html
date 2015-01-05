@@ -27,6 +27,17 @@
                   data-first_party_property="BLOGGER"
                   data-view_type="FILTERED_POSTMOD">
               </div>
+              <script>
+                var width = window.innerWidth;
+                
+                if (width > 720) {
+                  width = 720;
+                } else {
+                  width = width - 40;
+                }
+                
+                document.getElementsByClassName('g-comments')[0].setAttribute('data-width', width);
+              </script>
     
             </div>
           </div>          
